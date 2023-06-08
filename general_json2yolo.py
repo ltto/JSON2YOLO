@@ -405,8 +405,8 @@ if __name__ == '__main__':
 
     if source == 'COCO':
         convert_coco_json('/Users/ltt/gocode/xyq/out/pasture',  # directory with *.json
-                          out="new_box",
-                          use_segments=False)
+                          out="new_mask",
+                          use_segments=True)
 
     elif source == 'infolks':  # Infolks https://infolks.info/
         convert_infolks_json(name='out',
